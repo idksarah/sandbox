@@ -1,6 +1,7 @@
 * {
     font-family: monospace, sans-serif;
     background-color: aliceblue;
+    box-sizing: border-box;
 }
 
 .text {
@@ -8,27 +9,29 @@
     color: #1a1714;
 }
 
-.images {
-    align-content: center;
-    display: flex;
-}
-
-.images.wallpaper {
-    height: 500px;
-    width: auto;
-}
-
-.images.pfp {
-    height: 100px;
-    width: auto;
-}
-
 .container {
     display: flex;
     flex: auto;
+    justify-content: center;
 }
 
 .container .text {
     color: #807367;
 }
 
+.container .images.wallpaper {
+    height: 500px;
+    width: auto;
+    flex: 1 1 auto;
+}
+
+.container .images.pfp {
+    margin-top: -50px;
+    height: 150px;
+    width: auto;
+}
+
+.container .additional {
+    
+
+} /* babe why the fuck does CSS not register the class "additional" as a class */

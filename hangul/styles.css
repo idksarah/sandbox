@@ -15,12 +15,8 @@
     justify-content: center;
 }
 
-.container .text {
-    color: #807367;
-}
-
 .container .images.wallpaper {
-    height: 500px;
+    height: 250px;
     width: auto;
     flex: 1 1 auto;
 }
@@ -31,7 +27,16 @@
     width: auto;
 }
 
-.container .additional {
-    
+.container.links {
+    gap: 5px;
+    font-size: 15px;
+}
 
-} /* babe why the fuck does CSS not register the class "additional" as a class */
+.additional.text {
+    gap: 25px;
+    font-size: 14px;
+}
+
+.brown {
+    color: #807367; /* see if u can make it so udon't need a new rule just to make the text brown if u can */
+}

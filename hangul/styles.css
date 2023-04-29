@@ -5,23 +5,32 @@
 }
 
 .text {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    color: #1a1714;
 }
 
 .container {
     display: flex;
     flex: auto;
     justify-content: center;
+    color: #1a1714;
+    height: 100%;
 }
 
-.container .images.wallpaper {
+.blog-name {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container .wallpaper {
     height: 250px;
     width: auto;
     flex: 1 1 auto;
 }
 
-.container .images.pfp {
+.container.pfp {
     margin-top: -50px;
     height: 150px;
     width: auto;
@@ -30,13 +39,29 @@
 .container.links {
     gap: 5px;
     font-size: 15px;
+    margin-bottom: -10px;
 }
 
-.additional.text {
+.container.links,
+.container.additional {
+    color: #807367;
+}
+
+.container.additional {
     gap: 25px;
-    font-size: 14px;
+    font-size: 13px;
+    margin-bottom: 25px;
 }
 
-.brown {
-    color: #807367; /* see if u can make it so udon't need a new rule just to make the text brown if u can */
+.container .bio {
+    width: 800px;
+    margin: 0px;
+}
+
+.container.post {
+    border: #1a1714;
+    flex: 1 1 200px;
+    vertical-align: auto; /*what the fuck do you mean i don't have display: flex on it is literally on why are u saying the parent of my elements have display: block no they don't u stupid bitch 
+    some of it works now ig (not the post part tho aofjaijfaijfiejfiejfiejfaoeiwfjioaewoijaweorjifa)
+    i need to piss so fucking bad oh my god*/
 }

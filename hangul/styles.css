@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-.text {
+ p,
+ h2 { /*i fucking hate this class why did i create this why why why why why */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -28,10 +29,11 @@
     height: 250px;
     width: auto;
     flex: 1 1 auto;
+    margin: 0px;
 }
 
 .container.pfp {
-    margin-top: -50px;
+    margin-top: -100px;
     height: 150px;
     width: auto;
 }
@@ -54,14 +56,34 @@
 }
 
 .container .bio {
+    font-size: 14px;
     width: 800px;
     margin: 0px;
 }
 
 .container.post {
-    border: #1a1714;
-    flex: 1 1 200px;
-    vertical-align: auto; /*what the fuck do you mean i don't have display: flex on it is literally on why are u saying the parent of my elements have display: block no they don't u stupid bitch 
-    some of it works now ig (not the post part tho aofjaijfaijfiejfiejfiejfaoeiwfjioaewoijaweorjifa)
-    i need to piss so fucking bad oh my god*/
+    display: block;
+    border: solid #aaa8a7;
+    border-width: thin;
+    width: 500px;
+    margin: auto;
+    justify-content: left;
+}
+
+.post-title { /* feels too bold but idk */
+    font-weight: 800;
+}
+
+.post-text {
+    text-align: left;
+    margin: 15px;
+}
+
+.post-body {
+    font-size: 14px;
+}
+
+.post-images {
+    width: 500px;
+    height: auto;
 }

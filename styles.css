@@ -1,0 +1,9 @@
+.background {
+  background-color: #c3cedb;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: #5e0d0d;
+}

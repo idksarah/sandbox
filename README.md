@@ -1,2 +1,2 @@
 # sandbox
-A collection of small, unrelated projects.
+miscellaneous small projects
